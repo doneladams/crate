@@ -196,6 +196,7 @@ public class LogicalPlanner {
                 Order.create(
                     ProjectSet.create(
                         Filter.create(
+                            // TODO where does a window function go ?! treat as aggregate or as a completely separate thing?!
                             groupByOrAggregate(
                                 collectAndFilter(
                                     relation,
